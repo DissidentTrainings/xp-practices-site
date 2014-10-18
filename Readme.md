@@ -13,4 +13,8 @@ This is not a codejob only. This will contain
 * Features and Scanarios defined in Gherkin 
 * BDD as development style
 
- 
+## Features are not User Stories
+
+One of the base ideas behind features is that they are not User Stroies. Stories will go into the bugtracker of github and cucumber features into the repo. 
+
+* [Features are not User Stories](http://blog.mattwynne.net/2010/10/22/features-user-stories/)  

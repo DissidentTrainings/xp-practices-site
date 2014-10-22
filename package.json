@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/DissidentTrainings/xp-practices-site",
   "dependencies": {
-    "cucumber": "^0.4.4"
+    "cucumber": "^0.4.4",
+    "gulp": "^3.8.9",
+    "gulp-watch": "^1.1.0",
+    "wd": "^0.3.9"
+  },
+  "devDependencies": {
+    "gulp-cucumber": "git://github.com/sebs/gulp-cucumber.git"
   }
 }

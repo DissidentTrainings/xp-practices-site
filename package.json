@@ -1,0 +1,22 @@
+{
+  "name": "xp-practices-site",
+  "version": "1.0.0",
+  "description": "This projects shows how to create a whole project with BDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DissidentTrainings/xp-practices-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DissidentTrainings/xp-practices-site/issues"
+  },
+  "homepage": "https://github.com/DissidentTrainings/xp-practices-site",
+  "dependencies": {
+    "cucumber": "^0.4.4"
+  }
+}

@@ -1,24 +1,30 @@
 var wd = require('wd');
+var chai = require("chai");
+var chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
+chai.should();
+// enables chai assertion chaining
+chaiAsPromised.transferPromiseness = wd.transferPromiseness;
 
-var remote = wd.remote(); // this.browser will be available in step definitions
+var browser = wd.promiseChainRemote();
+
 
 // log status output from web driver
-remote.on('status', function(info){
-  console.log('\x1b[36m%s\x1b[0m', info);
+browser.on('status', function (info) {
+  // console.log('\x1b[36m%s\x1b[0m', info);
 });
 
 // log commands from web driver
-remote.on('command', function(meth, path, data){
-  console.log(' > \x1b[33m%s\x1b[0m: %s', meth, path, data || '');
+browser.on('command', function (meth, path, data) {
+  // console.log(' > \x1b[33m%s\x1b[0m: %s', meth, path, data || '');
 });
 
 var World = function World(callback) {
-  this.browser = remote;
+  this.browser = browser;
 
-  // run the callback when we are done do cucumber knows we are ready
-  this.browser.init({browserName: 'chrome'}, function() {
-    callback();
-  });
+  this.browser
+    .init({
+      browserName: 'chrome'
+    }, callback);
 };
-
 exports.World = World;

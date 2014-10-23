@@ -1,9 +1,9 @@
 var showPractices = function () {
   this.World = require('../support/world.js').World;
-  this.Given(/^I surf to "([^"]*)"$/, function (arg1, callback) {
+  this.Given(/^I surf to "([^"]*)"$/, function (page, callback) {
     var browser = this.browser;
-    browser.get('http://localhost:8080' + arg1).title();
-    callback();
+    this.browser.visit('http://localhost:8080/' + page, callback);
+
     // Write code here that turns the phrase above into concrete actions
   });
 };

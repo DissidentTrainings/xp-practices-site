@@ -1,6 +1,6 @@
 {
   "name": "xp-practices-site",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This projects shows how to create a whole project with BDD.",
   "main": "index.js",
   "scripts": {

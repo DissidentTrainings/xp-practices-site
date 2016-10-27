@@ -20,7 +20,7 @@
     "cucumber": "^0.4.4",
     "gulp": "^3.8.9",
     "gulp-watch": "^1.1.0",
-    "zombie": "^2.1.0"
+    "zombie": "^4.3.0"
   },
   "devDependencies": {
     "gulp-cucumber": "git://github.com/sebs/gulp-cucumber.git"

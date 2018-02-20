@@ -21,7 +21,7 @@
   "dependencies": {
     "cucumber": "^0.4.4",
     "gulp": "^3.8.9",
-    "gulp-watch": "^1.1.0",
+    "gulp-watch": "^4.0.0",
     "zombie": "^5.0.0",
     "snyk": "^1.30.1"
   },

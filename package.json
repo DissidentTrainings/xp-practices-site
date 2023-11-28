@@ -20,8 +20,8 @@
   "homepage": "https://github.com/DissidentTrainings/xp-practices-site",
   "dependencies": {
     "cucumber": "^0.9.0",
-    "gulp": "^3.8.9",
-    "gulp-watch": "^1.1.0",
+    "gulp": "^4.0.0",
+    "gulp-watch": "^5.0.1",
     "zombie": "^5.0.0",
     "snyk": "^1.30.1"
   },
